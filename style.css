@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  
+  --fontBody: 'Courgette', cursive;
+  
+  --ColorFontes: #f3f3f3;
+  --ColorLojas: #f3f3f3;
+  --ColorCargo: #b8bbc5;
+  --ColorBorderBoxPlanilha: linear-gradient(to right,#f64f59, #c471ed, #12c2e9); 
+  --ColorBorderImgPlanilha: #02d08f;
+  --ColorInformacoesAbas: #262626;
+  --ColorAbaSelecionado: #262626;
+  --ColorAba: #414141;
+  --ColorButtonLojas: #414141;
+  --ColorNameLojasHover: #ffffff;
+
+  
+
+  --backgroundBody: linear-gradient(to right,#12c2e9, #c471ed, #f64f59);
+  --backgroundPlanilha: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-image: var(--backgroundBody);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  
+  font-family: var(--fontBody);
+  color: var(--ColorFontes);
+  font-size: 18px; 
+}
+
+p {
+  font-size: 30px;
+}
+
+ul {
+  margin-top: 30px;
+  list-style: none;
+  display: flex;
+  
+
+  text-align: center;
+  align-items: center;
+}
+
+ul:hover {
+  padding: 5px;
+  background-color: var(--ColorButtonLojas);
+  border: 1px solid var(--ColorButtonLojas) ;
+  border-radius: 10px;
+}
+
+a:hover {
+  color: var(--ColorNameLojasHover);
+}
+
+.minhas-planilhas:hover {
+  overflow: hidden;
+
+
+
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+
+
+
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.minhas-planilhas img {
+  width: 100px;
+  border: 2px solid var(--ColorBorderImgPlanilha);
+  border-radius: 50px;
+}
+
+.planilha {
+  background-color: var(--backgroundPlanilha);
+  width: 40rem;
+  height: 37rem;
+  border: 2px solid var(--ColorBorderBoxPlanilha);
+  border-radius: 20px;
+  
+  padding: 1rem;
+  
+}
+
+.planilha .minhas-planilhas {
+  margin-bottom: 30px;
+}
+
+.planilha .minhas-planilhas .nome {
+  font-size: 26px;
+}
+
+.planilha .minhas-planilhas .cargo {
+  font-size: 20px;
+  color: var(--ColorCargo);
+}
+
+.abas, a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--ColorLojas)
+}
+
+.lojas{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.planilha .abas {
+  display: flex;
+}
+
+.planilha .abas .aba {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  cursor: pointer;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.abas img {
+  width: 50px;
+}
+
+.planilha .abas .aba.selecionado {
+  background-color: var(--ColorAbaSelecionado);
+}
+
+.planilha .abas .aba:hover {
+  background-color: var(--ColorAba);
+}
+
+.planilha .informacoes-abas {
+  background-color: var(--ColorInformacoesAbas);
+  border-radius: 0px 0px 10px 10px ;
+}
+
+.informacoes-abas .informacao{
+  min-height: 260px;
+  padding: 15px;
+  display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+  display: block;
+}
+
+
+@media (max-width:700px) {
+
+  .planilha {
+    width: 40rem;
+    height: 60rem;
+  }
+
+  body {
+    height: 100%;
+  }
+}
+
+
+
+
+
+
+
+
