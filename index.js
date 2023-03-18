@@ -15,11 +15,13 @@ abas.forEach(aba => {
     const informacaoSelecionada = document.querySelector(".informacao.selecionado");
     informacaoSelecionada.classList.remove("selecionado");
 
-    const idDoElementoDeInformacoesDaAba = `informacao-${aba.id}`
+    aba.classList.add("selecionado");
 
-    const informacaoASerMostrada = document.getElementById(idDoElementoDeInformacoesDaAba);
-    informacaoASerMostrada.classList.add("selecionado")
+    // const idDoElementoDeInformacoesDaAba = `informacao-${aba.id}`
 
-    console.log(informacaoASerMostrada);
+    // const informacaoASerMostrada = document.getElementById(idDoElementoDeInformacoesDaAba);
+    // informacaoASerMostrada.classList.add("selecionado")
+
+    // console.log(informacaoASerMostrada);
   });
 });
