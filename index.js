@@ -17,11 +17,11 @@ abas.forEach(aba => {
 
     aba.classList.add("selecionado");
 
-    // const idDoElementoDeInformacoesDaAba = `informacao-${aba.id}`
+    const idDoElementoDeInformacoesDaAba = `informacao-${aba.id}`
 
-    // const informacaoASerMostrada = document.getElementById(idDoElementoDeInformacoesDaAba);
-    // informacaoASerMostrada.classList.add("selecionado")
+    const informacaoASerMostrada = document.getElementById(idDoElementoDeInformacoesDaAba);
+    informacaoASerMostrada.classList.add("selecionado")
 
-    // console.log(informacaoASerMostrada);
+    console.log(informacaoASerMostrada);
   });
 });
